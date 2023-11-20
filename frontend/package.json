@@ -14,7 +14,8 @@
     "clsx": "^2.0.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
-    "vue": "^3.3.8"
+    "vue": "^3.3.8",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.0",

@@ -1,11 +1,5 @@
-<script setup lang="ts">
-import { Container } from "@/components/ui/container";
-</script>
-
 <template>
-  <Container>
-    <h1 class="text-5xl font-semibold text-center text-primary">Order Sushi</h1>
-  </Container>
+  <router-view></router-view>
 </template>
 
 <style scoped>
