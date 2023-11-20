@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 <template>
   <Container>
     <h1 class="text-5xl text-center font-medium">Order Sushi</h1>
-    <Button size="lg">Start Ordering</Button>
+    <div class="flex justify-center">
+      <Button size="lg">Start Ordering</Button>
+    </div>
   </Container>
 </template>
