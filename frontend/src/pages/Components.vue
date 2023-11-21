@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 
 <template>
   <Container>
-    <div class="flex justify-center gap-1 my-2">
+    <div class="flex flex-wrap justify-center gap-1 my-2">
       <div class="p-2 text-xs h-20 w-20 bg-zinc-50 shadow">bg-zinc-50</div>
       <div class="p-2 text-xs h-20 w-20 bg-zinc-100 shadow">bg-zinc-100</div>
       <div class="p-2 text-xs h-20 w-20 bg-zinc-200 shadow">bg-zinc-200</div>
