@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import logo from "@/assets/order-sushi.png";
-import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
+import { Container } from "@/components/ui/container";
+import { Footer } from "@/components/ui/footer";
 import { useMutation } from "@tanstack/vue-query";
 import { useRouter } from "vue-router";
 
@@ -29,4 +30,5 @@ function startOrder() {
       <Button size="lg" @click="startOrder">Start Ordering</Button>
     </div>
   </Container>
+  <Footer float />
 </template>
