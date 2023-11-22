@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import logo from "@/assets/order-sushi.png";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { useMutation } from "@tanstack/vue-query";
@@ -22,8 +23,9 @@ function startOrder() {
 
 <template>
   <Container>
-    <h1 class="text-5xl text-center font-medium">Order Sushi</h1>
-    <div class="flex justify-center">
+    <div class="flex flex-col items-center gap-6">
+      <h1 class="text-5xl text-center font-medium">Order Sushi</h1>
+      <img :src="logo" class="rounded-full w-[200px] h-[200px] object-cover" />
       <Button size="lg" @click="startOrder">Start Ordering</Button>
     </div>
   </Container>
