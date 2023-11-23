@@ -11,6 +11,10 @@ orders = []
 def home():
     return orders
 
+@app.route('/ping')
+def ping():
+    return {'message': 'pong!'}
+
 @app.route('/order/{food}/{}')
 def add_order():
     data = request.json
