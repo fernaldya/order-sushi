@@ -5,7 +5,11 @@ import { Container } from "@/components/ui/container";
 import { Footer } from "@/components/ui/footer";
 import { useMutation } from "@tanstack/vue-query";
 import { useRouter } from "vue-router";
+import { useHead } from "@unhead/vue";
 
+useHead({
+  title: "Order Sushi",
+});
 const router = useRouter();
 
 const startOrderMutation = useMutation({
