@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { Container } from "@/components/ui/container";
 import { Separator } from "@/components/ui/separator";
+import { useHead } from "@unhead/vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+useHead({
+  title: `Order #${route.params.id} | Order Sushi`,
+});
 </script>
 
 <template>
