@@ -44,9 +44,11 @@ const share = async () => {
     </h1>
     <Separator class="my-4 bg-zinc-200" />
     <section>
-      <div v-for="(order, i) in orders">
-        <p class="font-medium mb-2" v-if="i === 0">by {{ order.creator }}</p>
-        <p>{{ order.quantity }}x {{ order.meal.name }}</p>
+      <div v-for="(orders, creator) in groupedOrders">
+        <template v-for="(order, i) in orders">
+          <p class="font-medium mb-2" v-if="i === 0">by {{ creator }}</p>
+          <p>{{ order.quantity }}x {{ order.meal.name }}</p>
+        </template>
       </div>
     </section>
   </Container>
