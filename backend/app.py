@@ -15,12 +15,12 @@ def ping():
 @app.route('/sessions')
 def home():
     data = Session(db_handler).all()
-    return jsonify(data)
+    return jsonify(sessions=list(map(lambda x: x.serialize(), data)))
 
 @app.route('/sessions/<id>', methods=['GET'])
 def get_session(id):
     data = Session(db_handler).find(int(id))
     if data:
-        return jsonify(data), 200
+        return jsonify(data.serialize()), 200
     else:
         return jsonify(None), 404
