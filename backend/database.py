@@ -27,7 +27,7 @@ class DatabaseHandler:
     connection = self.connect()
     try:
       with connection.cursor() as cursor:
-        logger.info('Executing query: %s', query)
+        logger.info('Executing query: \033[32m%s;\033[0m', query)
         cursor.execute(query)
         result = cursor.fetchall()
         return result
