@@ -1,8 +1,8 @@
 import os
 from flask import request, Flask, jsonify
-from database import DatabaseHandler
 from dotenv import load_dotenv
-from session import Session
+from services import DatabaseHandler
+from models import Session
 
 app = Flask(__name__)
 load_dotenv()
