@@ -1,21 +1,7 @@
-from order import place_order
-# from food import Food
-from flask import request, Flask, jsonify
+from flask import Flask
+from dotenv import load_dotenv
 
 app = Flask(__name__)
+load_dotenv()
 
-orders = []
-
-
-@app.route('/')
-def home():
-    return orders
-
-@app.route('/ping')
-def ping():
-    return {'message': 'pong!'}
-
-@app.route('/order/{food}/{}')
-def add_order():
-    data = request.json
-    place
+import routes
